@@ -1,0 +1,18 @@
+﻿{
+  "ai_model": "claude-3-opus",
+  "temperature": 0.3,
+  "max_tokens": 2000,
+  "workspace_indexing": true,
+  "include_patterns": [
+    "**/*.py",
+    "**/*.sql",
+    "**/*.md",
+    "**/requirements.txt"
+  ],
+  "exclude_patterns": [
+    "**/data/raw/**",
+    "**/__pycache__/**",
+    "**/venv/**"
+  ],
+  "custom_instructions": "You are an expert data scientist familiar with A/B testing, statistics, and music streaming analytics. Provide production-ready code with proper error handling and logging."
+}
