@@ -1,0 +1,36 @@
+﻿# Core Dependencies
+pandas==2.1.3
+numpy==1.26.2
+scipy==1.11.4
+statsmodels==0.14.0
+
+# ML/NLP
+transformers==4.35.2
+torch==2.1.1
+huggingface-hub==0.19.4
+
+# Visualization & Dashboard
+streamlit==1.28.2
+plotly==5.18.0
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Code Quality
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+pre-commit==3.5.0
+pytest==7.4.3
+pytest-cov==4.1.0
+
+# Utilities
+python-dotenv==1.0.0
+tqdm==4.66.1
+joblib==1.3.2
+pydantic==2.5.0
+click==8.1.7
+requests==2.31.0
+aiohttp==3.9.0
+
+# Optional (AWS Deployment)
+boto3==1.29.7
