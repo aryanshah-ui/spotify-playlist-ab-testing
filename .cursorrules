@@ -1,0 +1,36 @@
+# Cursor AI Rules for Spotify A/B Testing Project
+
+## Project Context
+You are working on a production-grade A/B testing framework for Spotify playlist optimization using LLMs. The project uses Python 3.13+, SQLite for data storage, Hugging Face Transformers for NLP, and Streamlit for dashboards.
+
+## Code Style Guidelines
+- Use type hints for all functions
+- Write comprehensive docstrings in NumPy style
+- Follow Black formatting (88 char line length)
+- Prefer pandas method chaining over intermediate variables
+- SQL queries should use CTEs over subqueries
+- Always use parameterized queries to prevent SQL injection
+
+## Common Patterns
+- DataFrames are imported as: import pandas as pd
+- Use pathlib.Path over os.path
+- Logging over print statements
+- F-strings over .format() or %
+
+## Testing Requirements
+- Every function needs a corresponding test
+- Use pytest fixtures for test data
+- Mock external API calls
+- Aim for >80% code coverage
+
+## Performance Considerations
+- Vectorize operations instead of loops
+- Use chunking for large datasets
+- Cache expensive computations
+- Profile before optimizing
+
+## Project-Specific Context
+- Skip rate is the primary metric (lower is better)
+- Session length is secondary metric (higher is better)
+- Always consider statistical significance
+- Business impact > statistical significance
